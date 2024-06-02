@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* container1 */
+.kontainer1 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto; /* Center the container within the body */
+}
+
+/* link */
+.kontainer1 .link {
+    padding: 5px;
+    flex: 1;
+    margin: 10px;
+}
+
+.kontainer1 .link li {
+    border: none;
+    margin: 7px 0;
+    width: 90px;
+    list-style: none;
+}
+
+.kontainer1 .link li a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.kontainer1 .link li a:hover {
+    transition: 0.5s;
+    color: lightpink;
+}
+
+/* link */
+
+/* dark */
+
+.kontainer1 .darkbutton {
+    margin: 40px 0;
+}
+
+.kontainer1 .darkbutton .dark {
+    height: 50px;
+    font: arial;
+}
+
+/* dark */
+
+
+/* main */
+.main {
+    margin: 17px 10px;
+    border: 1px solid black;
+    flex: 7;
+    display: flex;
+    flex-direction: column; /* Ensure child elements stack vertically */
+    align-items: center; /* Center child elements horizontally */flex-wrap: wrap;
+
+}
+
+.main h1 {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: lightpink;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.main img {
+    margin: 40px 0; /* Vertical margin */
+    display: block; /* Ensure the margin auto works */
+}
+
+
+  
+  .editor-container {
+    width: 90%;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+.toolbar {
+    background: #ffffff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.toolbar button, .toolbar input {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.toolbar button:hover, .toolbar input:hover {
+    background: #ca8282;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#editor {
+    padding: 20px;
+    min-height: 300px;
+    outline: none;
+}
+
+/* imglist */
+
+.kontainer1 .playlist {
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kontainer1 .playlist img {
+   margin: 10px;
+   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+   width: 300px;
+   height: 300px;
+}
+
+.kontainer1 .playlist img:hover {
+    transition: 0.5s;
+    color: rgb(52, 204, 255);
+    opacity: 50%;
+}
+
+
+/* imglist */
+
+
+/* container1 */
+
+/* container2 */
+
+.kontainer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh; /* Atur sesuai kebutuhan */
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(247, 182, 182) 33%, rgb(235, 181, 181) 100%); 
+    margin: 100px 0;
+    overflow-y: scroll; /* tinggi */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.kontainer2::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.kontainer2 .item1:hover {
+    transform: scale(1.1); /* Memperbesar elemen */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan */
+    color: rgb(148, 132, 132);
+    opacity: 45%;
+    transition: 0.4s;
+}
+
+.kontainer2 .item1 {
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Menyusun elemen dalam satu kolom */
+    /* Mengatur teks agar berada di tengah */
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi */
+}
+
+.kontainer2 .item1 img {
+    width: 300px;
+    height: 300px; /* Atur sesuai kebutuhan */
+    margin-bottom: 20px; /* Memberi jarak antara gambar dan teks */
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.kontainer2 .item1 h1 {
+    margin: 0; /* Menghilangkan margin default dari h1 */
+    text-align: left;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    color: rgb(12, 1, 3);
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.kontainer2 .item1 p {
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* container2 */
+
+/* container4 */
+
+.kotakpeta {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+}
+
+.peta {
+    margin: auto;
+}
+
+/* container4 */
+
+/* ----------------------------------------------------------------------- */
+
+/* glitch */
+
+
+/* Custom pointer style */
+.custom-pointer {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, red, yellow, green, cyan, blue, magenta, red);
+    pointer-events: none;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+
+/* Glitch effect */
+.glitch {
+    animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(-5px, -5px);
+    }
+    40% {
+        transform: translate(5px, 5px);
+    }
+    60% {
+        transform: translate(-5px, 5px);
+    }
+    80% {
+        transform: translate(5px, -5px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+/* glitch */
+
+/* css reset and normalize html */
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* html normalize */
+
+/* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+    margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+    display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+    background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp,
+pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+    border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+    overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+    text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+    vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+    outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+    display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+    display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+    display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+    display: none;
+}
+
+
+
+/* css reset */
+
+
+
+/* ----------------------------------------------------------------------- */
+
+/* darkbutton */
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .kontainer1,
+.dark-mode .kontainer2 {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .main,
+.dark-mode .link li a {
+    color: #e0e0e0;
+}
+
+.dark-mode .toolbar button, 
+.dark-mode .toolbar input {
+    color: #e0e0e0;
+}
+
+.dark-mode .playlist img,
+.dark-mode .item1 {
+    box-shadow: none;
+}
+
+.dark-mode .item1 {
+    background-color: #524b4b;
+}
+
+.dark-mode .item1 h1 {
+    color: #ffffff;
+}
+
+.dark-mode .item1 p {
+    color: #b0b0b0;
+}
+
+/* darkbbutton */

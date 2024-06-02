@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>de4thstancestore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- kontainer1 -->
+    <div class="kontainer1">
+
+    <!-- link -->
+
+        <div class="link">
+            <li><a href="#b1">Shop</a></li>
+            <li><a href="#b2">Selection</a></li>
+            <li><a href="#b3">Records</a></li>
+            <li><a href="#b4">Artist</a></li>
+            <li><a href="#b5">Place</a></li>
+
+            <div class="darkbutton">
+                <button class="dark" id="dark-mode-toggle">Toggle Dark Mode</button>
+            </div>
+        </div>
+
+        
+
+    <!-- link -->
+
+        <div class="main" id="b1">
+
+            <h1>DEATHSTANCE</h1>
+
+            <img src="collage.jpg" alt="">
+
+            <div class="editor-container">
+                <div class="toolbar">
+                    <button onclick="execCmd('bold')"><b>B</b></button>
+                    <button onclick="execCmd('italic')"><i>I</i></button>
+                    <button onclick="execCmd('underline')"><u>U</u></button>
+                    <input type="color" onchange="execCmdWithArg('foreColor', this.value)">
+                </div>
+                <div id="editor" contenteditable="true"></div>
+            </div>
+
+            <div class="playlist" id="b2">
+
+                <img src="billie.jpg" alt="">
+                <img src="Glow_On_(Turnstile).png" alt="">
+                <img src="sza.png" alt="">
+                <img src="mac.jpeg" alt="">
+                <img src="angel.jpeg" alt="">
+                <img src="peggies1.jpeg" alt="">
+
+            </div>
+              
+
+
+        </div>
+
+    </div>
+
+    <!-- kontainer1 -->
+
+    <!-- kontainer2 -->
+
+    <div class="kontainer2" id="b3">
+
+        <div class="item1">
+            <img src="discharge.jpg" alt="">
+
+            <h1>discharge</h1>
+            <p>Hear nothing see nothing say nothing</p>
+        </div>
+
+        
+        <div class="item1">
+            <img src="dismember.jpg" alt="">
+            
+            <h1>dismember</h1>
+            <p>Like an over flowing stream</p>
+        </div>
+
+        <div class="item1">
+            <img src="dropdead.jpeg" alt="">
+            
+            <h1>Dropdead</h1>
+            <p>1985-1999</p>
+        </div>
+
+        <div class="item1">
+            <img src="sepultura.jpg" alt="">
+            
+            <h1>sepultura</h1>
+            <p>Morbid visions</p>
+        </div>
+
+        <div class="item1">
+            <img src="sodom.jpg" alt="">
+            
+            <h1>sodom</h1>
+            <p>In the sign of evil</p>
+        </div>
+
+        <div class="item1">
+            <img src="bathory.jpg" alt="">
+            
+            <h1>bathory</h1>
+            <p>Self titled</p>
+        </div>
+
+        <div class="item1">
+            <img src="mac.jpeg" alt="">
+            
+            <h1>Mac demarco</h1>
+            <p>Self titled</p>
+        </div>
+
+    </div>
+
+    <!-- kontainer2 -->
+
+    <!-- kontainer4 -->
+    
+    <div class="kotakpeta" id="b5">
+    <iframe class="peta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.796302590801!2d106.98315120781248!3d-6.23747119999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c240ab197bd%3A0xf702580b96ee0a9c!2sStasiun%20Bekasi!5e0!3m2!1sid!2sid!4v1717345358340!5m2!1sid!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- kontainer4 -->
+
+    <script src="function.js"></script>
+    <script src="darkmode.js"></script>
+</body>
+</html>
